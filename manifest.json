@@ -1,0 +1,32 @@
+{
+  "name": "Chat Clip",
+  "version": "0.3",
+  "description": "チャットワーク拡張",
+  "devtools_page": "devtools.html",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Chat Clip",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+      "contextMenus"
+  ],
+  "content_scripts": [
+    {
+    	"matches": [
+        "https://www.chatwork.com/*"
+      ],
+      "js": [
+        "jquery.js",
+        "common.js"
+      ],
+      "css": [
+        "cc-style.css"
+      ]
+    }
+  ],
+  "web_accessible_resources":[
+    "view.js",
+    "jquery.selection.js"
+  ]
+}

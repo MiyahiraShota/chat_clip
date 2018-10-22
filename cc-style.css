@@ -1,0 +1,148 @@
+._timeStamp{
+	padding-right: 22px;
+}
+.chat_clip.chatInput__fileIcon {
+	opacity: 1;
+	transition: .3s;
+	cursor: pointer;
+	position: absolute;right: 0;
+	top: 0;
+	font-size: 15px;
+}
+.chat_clip:hover {
+	opacity: 0.6;
+}
+#checkClipWrap {
+	position: absolute;
+	width: 17px;
+	height: 100%;
+	display: flex;
+	transition: .3s;
+	justify-content: end;
+	background: #e6e6e6;
+	top: 0;
+	right: 0;
+	z-index: 99;
+}
+#checkClipWrap.on {
+    width: 100%;
+}
+#checkClipWrapWnav {
+	height: 100%;
+    padding-right: 7px;
+    background: rgba(255,255,255,.3);
+    width: 10px;
+}
+#chatClipMarea {
+	display: none;
+	overflow: scroll;
+	background: #fff;
+	flex: 1;
+}
+#chatClipMarea .chatTimeLineMessageInner {
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+}
+#checkClipWrap.on #chatClipMarea {
+	display: block;
+}
+#checkClipWrap #checkClipWrapWnav svg {
+	transform: rotateY(180deg);
+}
+#checkClipWrap.on #checkClipWrapWnav svg {
+	transform: rotateY(0deg);
+}
+
+.cc-message {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.cc-m-head {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.cc-name {
+	font-weight: 700;
+    color: #0084b2;
+}
+.cc-timestamp {
+    -webkit-box-align: center;
+    align-items: center;
+    right: 5px;
+    top: 9px;
+    color: #666;
+    font-size: 11px;
+}
+.cc-body {
+    margin-bottom: 10px;
+}
+.cc-m-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.cc-m-footer div {
+	margin-left: 5px;
+}
+
+#ccAddShortCutWrap {
+    position: relative;
+    margin: 0 16px;
+    padding: 0 0 7px;
+}
+#ccAddShortCutInner {
+	border-radius: 3px;
+    border: 1px solid #b3b3b3;
+}
+#ccAddShortCut__tools {
+	border-radius: 3px 3px 0 0;
+    zoom: 1;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    height: 34px;
+    line-height: 33px;
+    border-bottom: 1px solid #b3b3b3;
+}
+#ccAddShortCut__tools .right_wrap {
+    float: right;
+    margin-right: 10px;
+}
+#ccAddShortCut__tools .left_wrap {
+    display: inline-block;
+    padding: 0 5px;
+}
+#ccAddShortCutInput {
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: 100%;
+    outline: 0;
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    background: transparent;
+    overflow-y: hidden;
+    min-height: 50px;
+    font-size: 14px;
+}
+#ccAddShortCutBtn {
+	margin-left: 10px;
+}
+
+#_chatSendTool {
+    display: inline-box;
+    display: -webkit-inline-box;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    max-width: 60%;
+}
+#_chatSendTool::-webkit-scrollbar {
+    display: none;
+}
+
+#ccAddShortCut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
